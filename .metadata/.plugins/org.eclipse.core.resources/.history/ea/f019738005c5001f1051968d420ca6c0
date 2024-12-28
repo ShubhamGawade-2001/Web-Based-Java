@@ -1,0 +1,38 @@
+
+package com.cdac.HibernateDemo;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class App {
+	public static void main(String[] args) {
+		Configuration hiberConfig = new Configuration();
+
+		hiberConfig.configure("hibernate.cfg.xml");
+
+		try (SessionFactory hbFactory = hiberConfig.buildSessionFactory();
+				Session hbSession = hbFactory.openSession();) {
+		//	private static void(Session hbSession) {
+			System.out.println("Hello World!");
+			Users uObj = new Users();
+			uObj = hbSession.get(Users.class, "acts");
+			uObj.setUsername("Shubham4");
+			uObj.setPassword("Shubham4");
+			uObj.setName("ShubhamFour");
+			uObj.setEmail("Shubham4@test.com");
+//			//Transaction tx = hbSession.beginTransaction();
+//			
+//			hbSession.persist(uObj);
+//			
+//			tx.commit();
+//			
+			
+		}catch(HibernateException e) {
+			e.printStackTrace();
+		}
+
+	}
+}

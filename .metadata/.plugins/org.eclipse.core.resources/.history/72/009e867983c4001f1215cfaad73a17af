@@ -1,0 +1,14 @@
+package com.cdac.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HomeController  {
+	
+	@RequestMapping("/")
+	public String home() {
+		System.out.println("This is home");
+		return "index";
+	}
+  	
+}

@@ -1,0 +1,19 @@
+package com.cdac.HibernateDemo;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        Users uObj = new Users();
+        uObj.setUsername("Shubham1");
+        uObj.setPassword("Shubham1");
+        uObj.setName("ShubhamOne");
+        uObj.setEmail("Shubham1@test.com");
+        
+    }
+}

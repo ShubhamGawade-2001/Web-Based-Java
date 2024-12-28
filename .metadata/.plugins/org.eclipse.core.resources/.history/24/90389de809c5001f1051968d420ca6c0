@@ -1,0 +1,9 @@
+hibernate.connection.driver_class">com.mysql.jdbc.Driver
+    hibernate.connection.password">cdac
+    hibernate.connection.url">jdbc:mysql://localhost:3306/cdacdb
+    hibernate.connection.username">cdac
+    hibernate.dialect">org.hibernate.dialect.MySQLDialect
+    hbm2ddl.auto">update
+ show_sql">true</property>
+    	<!-- <mapping resource="first.hbm.xml"/> -->
+    	<mapping class="com.cdac.HibernateDemo.Users"/>

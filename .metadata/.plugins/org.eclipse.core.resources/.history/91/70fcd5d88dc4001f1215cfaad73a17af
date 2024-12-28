@@ -1,0 +1,8 @@
+package com.cdac.HibernateDemo;
+
+public class Users {
+
+	private int uid;
+	private String uname;
+	
+}

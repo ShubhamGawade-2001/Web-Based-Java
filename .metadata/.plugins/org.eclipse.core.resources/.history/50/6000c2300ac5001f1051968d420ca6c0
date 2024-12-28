@@ -1,0 +1,10 @@
+ hibernate.connection.url=jdbc:mysql://localhost:3306/cdacdb
+hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver
+hibernate.connection.username=cdac
+hibernate.connection.password=cdac
+   
+   
+    hibernate.dialect=org.hibernate.dialect.MySQLDialect
+    
+    	<!-- <mapping resource="first.hbm.xml"/> -->
+    	<mapping class="com.cdac.HibernateDemo.Users"/>

@@ -1,0 +1,14 @@
+package com.cdac.SimpleWebApp.service;
+
+import java.util.Arrays;
+import java.util.List;
+
+import com.cdac.SimpleWebApp.model.Product;
+
+public class ProductService {
+	
+	List<Product> products = Arrays.asList(new Product());
+	public List<Product> getProducts(){
+		return null;
+	}
+}

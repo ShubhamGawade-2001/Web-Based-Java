@@ -1,0 +1,21 @@
+package com.cdac.model;
+
+import jakarta.servlet.annotation.WebListener;
+import jakarta.servlet.http.HttpSessionBindingListener;
+import javax.tools.JavaFileObject;
+
+/**
+ * Application Lifecycle Listener implementation class Alien
+ *
+ */
+@WebListener
+public class Alien implements JavaFileObject, HttpSessionBindingListener {
+
+    /**
+     * Default constructor. 
+     */
+    public Alien() {
+        // TODO Auto-generated constructor stub
+    }
+	
+}

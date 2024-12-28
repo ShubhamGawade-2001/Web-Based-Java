@@ -1,0 +1,14 @@
+package com.example.demo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Test {
+	Laptop laptop;
+	
+	public void code() {
+	 	laptop.compile();
+		System.out.println("codesss");
+	}
+	
+}

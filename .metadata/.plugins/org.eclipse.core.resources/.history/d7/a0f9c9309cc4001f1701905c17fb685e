@@ -1,0 +1,26 @@
+package com.cdac.HibernateDemo;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class App {
+	public static void main(String[] args)
+	{
+		System.out.println("Hello World!");
+		Users uObj = new Users();
+		uObj.setUsername("Shubham1");
+		uObj.setPassword("Shubham1");
+		uObj.setName("ShubhamOne");
+		uObj.setEmail("Shubham1@test.com");
+
+		Configuration config = new Configuration().configure().addAnnotatedClass(Users.class);
+
+		SessionFactory sf = config.buildSessionFactory();
+
+		Session session = sf.openSession();
+
+		session.save(uObj);
+
+	}
+}

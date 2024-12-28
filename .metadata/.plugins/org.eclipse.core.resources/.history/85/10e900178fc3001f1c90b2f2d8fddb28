@@ -1,0 +1,9 @@
+package com.cdac.SimpleWebApp;
+
+public class HomeController {
+
+	public String welcome() {
+		return "Welcome to page";
+	}
+	
+}

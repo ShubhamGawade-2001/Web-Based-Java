@@ -1,0 +1,25 @@
+package com.example.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+@Controller
+public class HomeController 
+{	
+	@RequestMapping("/home")
+	public String home()
+	{
+		System.out.println("Home called");
+		return "index.jsp";
+	}
+	
+	@RequestMapping("add")
+	public String add(HttpServletRequest request) 
+	{
+		int i = Integer.parseInt(request.getParameter("num1"));
+		return "result.jsp";
+	}
+
+}

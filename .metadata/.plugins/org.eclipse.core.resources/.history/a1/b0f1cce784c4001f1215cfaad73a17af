@@ -1,0 +1,15 @@
+package com.cdac.model;
+
+
+public class Alien {
+     
+	
+	public Alien() {
+    
+		private int id;
+		String aname;
+		
+     
+     }
+	
+}

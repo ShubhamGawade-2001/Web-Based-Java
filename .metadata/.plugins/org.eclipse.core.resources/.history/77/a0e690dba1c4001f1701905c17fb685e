@@ -1,0 +1,25 @@
+package com.cdac.HibernateDemo;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.BootstrapServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+
+public class App {
+	public static void main(String[] args)
+	{
+		Configuration hiberConfig =new Configuration();
+		
+		hiberConfig.configure("hibernate");
+		System.out.println("Hello World!");
+		Users uObj = new Users();
+		uObj.setUsername("Shubham1");
+		uObj.setPassword("Shubham1");
+		uObj.setName("ShubhamOne");
+		uObj.setEmail("Shubham1@test.com");
+
+
+	}
+}

@@ -1,0 +1,5 @@
+127.0.0.1 - - [26/Dec/2024:15:13:19 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Dec/2024:15:13:19 +0530] "GET /JDBCFirst/WEB-INF/classes/com/cdac/DemoJDBC.java HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [26/Dec/2024:15:13:19 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [26/Dec/2024:15:13:47 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Dec/2024:15:13:48 +0530] "GET /JDBCFirst/WEB-INF/classes/com/cdac/DemoJDBC.java HTTP/1.1" 404 682
